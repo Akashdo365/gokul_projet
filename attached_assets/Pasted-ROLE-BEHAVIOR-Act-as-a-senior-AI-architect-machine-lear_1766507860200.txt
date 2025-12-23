@@ -1,0 +1,316 @@
+ROLE & BEHAVIOR
+
+Act as a senior AI architect, machine learning engineer, and full-stack developer with real-world experience in assistive technology for visually impaired users.
+You must think like a final-year project mentor and build a COMPLETE, CORRECT, PRODUCTION-READY system.
+Do not skip any part.
+Generate clean, structured, commented code and explain when needed.
+
+🎓 PROJECT TITLE
+
+Intelligent Blind Assistance and Emergency Support System using Machine Learning Techniques
+
+🎯 PROJECT OBJECTIVE
+
+Build an AI-powered assistive system for visually impaired users that:
+
+Detects objects in real time
+
+Reads printed text aloud (OCR)
+
+Recognizes Indian currency notes
+
+Converts all outputs to natural speech
+
+Allows users to save personal information
+
+Provides one-tap emergency assistance
+
+Navigates users to saved addresses
+
+Works with accessibility-first design
+
+🧱 TECH STACK (MANDATORY)
+Frontend
+
+React.js
+
+HTML5, CSS3, JavaScript
+
+Axios (API calls)
+
+Camera API (live capture)
+
+File upload
+
+Geolocation API
+
+Google Maps URL navigation
+
+Accessibility-friendly UI (large buttons, high contrast)
+
+Backend
+
+Python
+
+FastAPI
+
+OpenCV (image preprocessing)
+
+TensorFlow + MobileNet
+
+Tesseract OCR
+
+Google TTS API or ElevenLabs TTS
+
+Database
+
+MySQL
+
+🧠 MACHINE LEARNING REQUIREMENTS (VERY IMPORTANT)
+1️⃣ Object Detection Model
+
+Use MobileNet SSD
+
+Dataset: COCO (or equivalent)
+
+Classes: person, chair, door, vehicle, bottle
+
+Output: object name + confidence
+
+Return structured JSON
+
+2️⃣ OCR Model
+
+Use Tesseract OCR
+
+Apply OpenCV preprocessing:
+
+grayscale
+
+thresholding
+
+noise removal
+
+Output extracted text
+
+3️⃣ Currency Recognition Model
+
+Build a CNN using MobileNet
+
+Dataset: Indian currency notes (₹10, ₹20, ₹50, ₹100, ₹200, ₹500)
+
+Include:
+
+dataset structure
+
+training script
+
+evaluation accuracy
+
+saved .h5 model
+
+Output predicted currency value
+
+🔊 TEXT-TO-SPEECH REQUIREMENTS
+
+Convert all results to speech
+
+Support:
+
+English (mandatory)
+
+Tamil / Hindi (optional)
+
+Return audio file or streamable URL
+
+🚨 EMERGENCY & PERSONAL SAFETY MODULE (MANDATORY)
+User Personal Information
+
+Allow user to save:
+
+Name
+
+Home address
+
+Emergency contact number
+
+Alternate contact
+
+Preferred language
+
+Emergency Button Behavior
+
+When user clicks Emergency Button:
+
+Fetch saved emergency contact
+
+Fetch saved address
+
+Get live GPS location
+
+Trigger:
+
+Phone call (frontend)
+
+Location sharing
+
+Google Maps navigation
+
+Speak voice confirmation
+
+🗄️ DATABASE DESIGN (MANDATORY)
+Tables:
+
+users
+
+scan_logs
+
+emergency_logs
+
+Include full SQL schema.
+
+🔗 API DESIGN (MANDATORY)
+
+Build these FastAPI endpoints:
+
+POST /api/detect-object
+POST /api/read-text
+POST /api/detect-currency
+POST /api/text-to-speech
+
+POST /api/user/profile
+GET  /api/user/profile
+
+POST /api/emergency/trigger
+GET  /api/scan-history
+
+🖥️ FRONTEND REQUIREMENTS
+Screens:
+
+Home dashboard
+
+Object detection screen
+
+Text reading screen
+
+Currency recognition screen
+
+User profile screen
+
+Emergency screen
+
+UI Rules:
+
+Large buttons
+
+Minimal text
+
+Voice feedback for every action
+
+High contrast
+
+One-tap emergency access
+
+🧭 NAVIGATION FEATURE
+
+When user clicks Navigate to Address
+
+Open Google Maps using:
+
+https://www.google.com/maps/dir/?api=1&destination=<ADDRESS>
+
+
+Speak:
+
+“Navigation started to your saved address.”
+
+🧪 LOGGING & HISTORY
+
+Save every scan result
+
+Save emergency actions
+
+Allow viewing scan history
+
+🧠 PROJECT STRUCTURE (MANDATORY)
+/backend
+  /models
+  /routes
+  /services
+  /ml
+  /utils
+  main.py
+
+/frontend
+  /components
+  /pages
+  /services
+  /assets
+  App.js
+
+/database
+  schema.sql
+
+📊 EVALUATION METRICS
+
+Object detection accuracy
+
+OCR accuracy
+
+Currency recognition accuracy
+
+Response time
+
+Accessibility effectiveness
+
+📄 DOCUMENTATION REQUIREMENTS
+
+Generate:
+
+Project abstract
+
+Problem statement
+
+System architecture explanation
+
+ML training explanation
+
+Results & screenshots
+
+Future enhancements
+
+Viva questions & answers
+
+🧠 DEVELOPMENT RULES
+
+Code must be clean, modular, and commented
+
+Follow best practices
+
+No placeholder logic
+
+No missing steps
+
+Everything must be runnable
+
+Think like final-year evaluation panel
+
+🏁 FINAL OUTPUT EXPECTATION
+
+By the end, I should have:
+
+Fully working frontend
+
+Fully working backend
+
+Well-trained ML models
+
+Database schema
+
+API documentation
+
+Final year–ready project
+
+🔥 START BUILDING THE COMPLETE PROJECT STEP BY STEP.
+DO NOT SKIP ANY MODULE.
+PROCEED LIKE A REAL ENGINEERING PROJECT.
